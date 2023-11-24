@@ -1,0 +1,409 @@
+@font-face {
+    font-family: 'Open SansB';
+    src: url(./open-sans/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'Open SansR';
+    src: url(./open-sans/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Open SansS';
+    src: url(./open-sans/OpenSans_SemiCondensed-SemiBold.ttf);
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.whole-container{
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+    display: flex;
+}
+
+.left-container{
+    background-image: url(./assets/photo.jpg);
+    padding: 12px;
+    width: 469px;
+    height: 100vh;
+    background-size: cover;   
+}
+
+.over{
+    width: 445px;
+    height: 97vh;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.frame{
+    width: 397px;
+    height: 223px;
+    padding: 36px;
+    gap: 24px;
+}
+
+.logo{
+    width: 240.7px;
+    height: 49px;
+    gap: 1px;
+}
+
+.left-p{
+    font-family: 'Open SansS';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin: 0;
+}
+
+
+/*rightContainer*/
+.formContainer{
+    width: 808px;
+    height:  100vh;
+    left: 472px; 
+    display: flex;
+    flex-direction: column;
+      
+}
+
+.formContent{
+    width: 340px;
+    height: 372px;
+    gap: 12px;
+    margin: auto;
+    display: flex;   
+    flex-direction: column;
+}
+
+.title{
+    padding-bottom: 24px;
+}
+
+h5{
+    margin: 0;
+    font-family: 'Open SansB';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1F2937;
+}
+
+.par1{
+    font-family: 'Open SansR';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6B7280;
+}
+
+.google-row{
+    width: 100%;
+    height: 48px;
+    gap: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.google-and-button{
+    width: 281px;
+    height: 48px;
+    padding: 2px;
+    border-radius: 4px;
+    background-color: #4285F4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.SignIn{
+    width: 234px;
+    height: 26px;
+    font-family: 'Open SansB';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 45px;
+    background-color: transparent;
+    color: white;
+    border: 0;
+}
+
+.googleIcon{
+    position: absolute;   
+}
+
+.fbDiv{
+    width: 47px;
+    height: 48px;
+    padding: 2px;
+    border-radius: 4px;
+    background-color: #ECF2FC;
+    position: relative;  
+}
+
+.fbicon{
+    width: 43px;
+    height: 43px;
+    border-radius: 2px, 0px, 0px, 2px;
+}
+
+.recDiv{
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.rectangle{
+    width: 100%;
+    height: 1px;
+    background-color: #E5E7EB;
+}
+
+.inputDiv{
+    width: 100%;
+    height: 48px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;  
+    border-radius: 4px;
+    border: 1px solid #6B7280;
+    text-align: center;    
+    align-items: center;
+
+}
+
+.inputField{
+    position: absolute;
+    width: 239px;
+    height: 22px;
+    font-family: 'Open SansS';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #D1D5DB;
+    opacity: 0.3;
+    padding: 0;
+    display: flex;
+    left: 53px;   
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+}
+
+.atSymbolDiv{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.atSymbol{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 24px;
+    height: 24px;
+}
+
+
+.frgtPassword{
+    display: flex;
+    gap: 4px;
+    padding: 6px;
+}
+
+.formP{    
+    width: fill (119px);
+    font-family: 'Open SansS';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#6B7280;
+    margin: 0;
+}
+
+a{
+    width: fill(67px);
+    color: #6D58BA;
+    font-family: 'Open SansS';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.ContinueButton{
+    width: 100%;
+    height: 48px;
+    border-radius: 6px;
+    color: white;
+    background-color: #724DFF;
+    outline: none;
+    font-family: 'Open SansS';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: 0;
+}
+
+.question{
+    width: fill(331px);
+    font-family: 'Open SansS';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    color:#6B7280;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Mobilequestion{
+    display: none;
+}
+
+@media screen and (max-width: 360px){
+    body{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 8px;
+    }
+
+    .left-container{
+        display: none;
+    }
+
+    .formContainer{
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .formContent{
+        width: 312px;
+        height: 363px;
+        gap: 12px;
+        margin: auto;
+        display: flex;   
+        flex-direction: column;
+    }
+
+    .title{
+        width: 100%;
+    }
+
+
+    h5{
+        margin: 0;
+        font-family: 'Open SansB';
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+        text-align: center;
+        color: #1F2937;
+        }
+
+    .par1{
+        font-family: 'Open SansR';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #6B7280;
+    }
+
+    .google-row{
+        width: 100%;
+        height: 48px;
+        gap: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .google-and-button{
+        width: 253px;
+        height: 48px;
+        padding: 2px;
+        border-radius: 4px;
+        background-color: #4285F4;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+    }
+
+    .fbDiv{
+        width: 47px;
+        height: 48px;
+        padding: 2px;
+        border-radius: 30px;
+        background-color: #ECF2FC;
+        position: relative;  
+    }
+
+    .recDiv{
+        display: none;
+    }
+
+    .inputDiv{
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .ContinueButton{
+        width: 121px;
+        margin: 0 auto;
+    }
+
+    .question{
+        display: none;
+    }
+
+    .Mobilequestion{
+        width: 300px;
+        font-family: 'Open SansS';
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 26px;
+        color:#6B7280;
+        margin: 0 auto;
+        text-align: left;
+        display: block;
+    }
+
+
+
+
+    
+}
